@@ -2,8 +2,8 @@ import React, { useState } from 'react';
 // Importa o React e a função 'useState' do módulo 'react'.
 function TodoList() {
     // Define uma função de componente chamada 'TodoList'.
-    const [tasks, setTasks] = useState([]);
-    const [newTask, setNewTask] = useState('');
+    const [tasks, setTasks] = useState([]);//quantidade de tarefas neste caso (vetor)
+    const [newTask, setNewTask] = useState('');//e qual a tarefa no caso o q vc digitou
     // Usa o 'useState' para declarar duas variáveis de estado: 'tasks' e 'newTask'.
     const addTask = () => {
         if (newTask.trim() !== '') {
@@ -58,3 +58,4 @@ com o que o usuário digitar. */}
 }
 export default TodoList;
 // Exporta o componente 'TodoList' para uso em outros lugares do código.
+//npm
